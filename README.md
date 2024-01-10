@@ -17,6 +17,8 @@ This tool is not a complete experiment application. It is developed only to help
 
 The figure below shows the geometry details of a toroidal PMT.
 
+[githubPic.pdf](https://github.com/mkandemirr/torusPMT/files/13891068/githubPic.pdf)
+
 ## Dependency
 
 This tool utilizes [OPSim](https://github.com/mkandemirr/OpSim.git) for easy simulation of optical photons, and [G4DCP](https://github.com/mkandemirr/G4DCP.git) for flexible geometry (detector) construction.
@@ -69,17 +71,17 @@ _torusPMT/data/material_mpt_: This directory contains data files for the optical
 
 _torusPMT/data/surface_mpt_: This directory contains data files for the optical properties of surfaces defined to construct toroidal PMTs. The defined optical surfaces are reflector surfaces and photocathode surfaces.
 
-_torusPMT/macros_: This directory contains macro files (file with .mac extension) to control parameters defined to construct PMTs. All the parameters can be changed at run time without recompliation of the code.
+_torusPMT/macros_: This directory contains macro files (file with .mac extension) to control parameters defined to construct PMTs. All the parameters can be changed at run time without recompilation of the code.
 
 _torusPMT/macros/mpt_: This directory contains macro files to control material optical properties such as refractive index, absorption length, etc..
 
-_torusPMT/macros/os_: This directory contains macro files to control surface optical properties such as reflector reflectivity and PMT photocathode quantum efficiecy. 
+_torusPMT/macros/os_: This directory contains macro files to control surface optical properties such as reflector reflectivity and PMT photocathode quantum efficiency. 
  
-_torusPMT/macros/pmts_: This directory contains macro files to control geometry construction parameters of PMTs.
+_torusPMT/macros/pmts_: This directory contains macro files to control the geometry construction parameters of PMTs.
 
 _torusPMT/macros/vis_: This directory contains macro files to control visual parameters such as visibility and colors.
 
-_example_: This directory contains a sample Geant4 application using toroidal PMTs in the detector geometry. To test the PMTs, a toy Cherenkov detector surrounded by PMTs was constructed and a sensitive detector was defined to count the photons detected. The programme prints out the photon detection time and the number of photons detected by each PMT. Other classes needed to complete the application (except the UserDetectorConstruction class) have been kept in their simplest form.
+_example_: This directory contains a sample Geant4 application using toroidal PMTs in the detector geometry. To test the PMTs, a toy Cherenkov detector surrounded by PMTs was constructed, and a sensitive detector was defined to count the photons detected. The program prints out the photon detection time and the number of photons detected by each PMT. Other classes needed to complete the application (except the UserDetectorConstruction class) have been kept in their simplest form.
 
 ## Tested on 
 
@@ -115,8 +117,8 @@ passed to CMake. The first argument to CMake is the path to the source directory
    ./main
 ```
 
-The figure below shows an example event output from the programme.
-
+The figure below shows an example event output from the program.
+(https://github.com/mkandemirr/torusPMT/files/13891085/ToyCherenkovDet.pdf)
 ## Contacts 
 
 If you have any questions or wish to notify of updates and/or modifications please contact: \

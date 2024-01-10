@@ -119,6 +119,8 @@ passed to CMake. The first argument to CMake is the path to the source directory
 
 The figure below shows an example event output from the program.
 
+![ToyCherenkovDet](https://github.com/mkandemirr/torusPMT/assets/114905224/f4206c1a-7585-41df-8e95-643f41f26d54)
+
 ## Contacts 
 
 If you have any questions or wish to notify of updates and/or modifications please contact: \

@@ -17,7 +17,7 @@ This tool is not a complete experiment application. It is developed only to help
 
 The figure below shows the geometry details of a toroidal PMT.
 
-[githubPic.pdf](https://github.com/mkandemirr/torusPMT/files/13891068/githubPic.pdf)
+![githubPic](https://github.com/mkandemirr/torusPMT/assets/114905224/7b5fac8c-dd54-485f-8d32-925b3bdc55da)
 
 ## Dependency
 
@@ -118,7 +118,7 @@ passed to CMake. The first argument to CMake is the path to the source directory
 ```
 
 The figure below shows an example event output from the program.
-(https://github.com/mkandemirr/torusPMT/files/13891085/ToyCherenkovDet.pdf)
+
 ## Contacts 
 
 If you have any questions or wish to notify of updates and/or modifications please contact: \

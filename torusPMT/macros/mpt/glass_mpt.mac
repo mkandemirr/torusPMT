@@ -1,0 +1,6 @@
+#glass_mpt
+/control/alias mptName glass
+/control/alias dataDirectory torusPMT/data/material_mpt/{mptName}
+
+/matPropTable/{mptName}/addProperty RINDEX {dataDirectory}/rIndex.txt nm unitless 
+/matPropTable/{mptName}/addProperty ABSLENGTH {dataDirectory}/absLength.txt nm mm  

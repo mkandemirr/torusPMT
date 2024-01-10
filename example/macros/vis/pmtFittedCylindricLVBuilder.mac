@@ -1,0 +1,15 @@
+#Outer cyliner world
+/vis/geometry/set/visibility OuterCylinderWorldLv 0 true
+/vis/geometry/set/forceWireframe OuterCylinderWorldLv 0 true
+/vis/geometry/set/colour OuterCylinderWorldLv 0 red
+
+#Outer cylinder
+/vis/geometry/set/visibility OuterCylinderLv 0 true
+/vis/geometry/set/forceWireframe OuterCylinderLv 0 true
+/vis/geometry/set/colour OuterCylinderLv 0 gray
+
+#Inner cylinder
+/vis/geometry/set/visibility InnerCylinderLv 0 true
+/vis/geometry/set/forceWireframe InnerCylinderLv 0 false
+/vis/geometry/set/colour InnerCylinderLv 0 blue
+

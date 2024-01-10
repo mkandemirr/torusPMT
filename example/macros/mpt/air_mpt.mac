@@ -1,0 +1,5 @@
+#Air 
+/control/alias dataDirectory data/material_mpt/air
+
+/matPropTable/air/addProperty RINDEX {dataDirectory}/rIndex.txt nm unitless 
+/matPropTable/air/addProperty ABSLENGTH {dataDirectory}/absLength.txt nm mm  

@@ -1,0 +1,32 @@
+# Macro file for the initialization of example main
+# in interactive session
+#
+# Set some default verbose
+/control/verbose 2
+/control/saveHistory
+/run/verbose 2
+#
+# Change the default number of threads (in multi-threaded mode)
+/run/numberOfThreads 1
+#
+
+
+#/tracking/verbose 1
+
+#normally, PhotonSD does not called automatically when boundary status is detection
+/process/optical/boundary/setInvokeSD true
+
+#/process/optical/boundary/verbose 2
+#/process/optical/verbose 2
+
+
+#name may be one of Cerenkov, Scintillation, OpAbsorption, OpRayleigh, OpMieHG, OpBoundary, OpWLS,OWLS2. By default, all the #processes are activated.
+/process/optical/processActivation OpAbsorption false
+/process/optical/processActivation OpRayleigh false
+/process/optical/processActivation Scintillation true
+/process/optical/processActivation Cerenkov true
+
+# Initialize kernel
+/run/initialize
+
+/run/beamOn 1

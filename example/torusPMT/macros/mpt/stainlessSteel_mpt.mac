@@ -1,0 +1,5 @@
+#stainlessSteel_mpt
+/control/alias mptName stainlessSteel
+/control/alias dataDirectory torusPMT/data/material_mpt/{mptName}
+
+/matPropTable/{mptName}/addProperty ABSLENGTH {dataDirectory}/absLength.txt nm mm

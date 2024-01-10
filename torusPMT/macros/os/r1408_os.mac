@@ -1,0 +1,16 @@
+#r1408_os 
+/control/alias pmtModel r1408
+/control/alias dataDirectory torusPMT/data/surface_mpt/{pmtModel}
+
+/matPropTable/{pmtModel}/addProperty REALRINDEX {dataDirectory}/realRIndex.txt nm unitless
+/matPropTable/{pmtModel}/addProperty IMAGINARYRINDEX {dataDirectory}/imaginaryRIndex.txt nm unitless
+/matPropTable/{pmtModel}/addProperty EFFICIENCY {dataDirectory}/efficiency.txt nm unitless 
+
+# If you comment out the two lines below, all photons hitting the photocathode surface will be detected!
+#/matPropTable/{pmtModel}/addProperty EFFICIENCY {dataDirectory}/efficiency.txt nm unitless false false 1.
+#/matPropTable/{pmtModel}/addProperty REFLECTIVITY {dataDirectory}/efficiency.txt nm unitless false false 0.
+
+/opticalSurface/{pmtModel}/model glisur
+/opticalSurface/{pmtModel}/type dielectric_metal
+/opticalSurface/{pmtModel}/finish polished
+

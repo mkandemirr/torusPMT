@@ -1,0 +1,10 @@
+#mirror_os
+/control/alias osName mirror
+/control/alias dataDirectory torusPMT/data/surface_mpt/{osName}
+
+/matPropTable/{osName}/addProperty REFLECTIVITY {dataDirectory}/reflectivity.txt nm unitless
+
+/opticalSurface/{osName}/model unified
+/opticalSurface/{osName}/type dielectric_dielectric
+/opticalSurface/{osName}/finish polishedfrontpainted
+

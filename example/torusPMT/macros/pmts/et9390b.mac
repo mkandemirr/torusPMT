@@ -1,0 +1,27 @@
+#taken from PMT documentation. Photocathode details are wrong!
+/pmt/zEdge 4.020 1.00 0.00 -42.75 -84.00 -85.00 -150.00
+
+#this assumes that the photocathode covers the entire front face of the PMT
+/pmt/rhoEdge 67.50 67.50 67.50 67.50 25.75 25.75 25.75
+
+# and wraps back another 1mm, in reality the photocathode diameter is ~115mm 
+/pmt/zOrigin -1000000.00 0.00 0.00 10000.00 84.50 0.00
+
+/pmt/faceGap 0.1 mm
+/pmt/dynodeRadius 2.0 mm
+/pmt/dynodeTop -100.375 mm
+/pmt/wallThickness 3.0 mm
+
+#/pmt/photocathodeMinRho 0.0
+#/pmt/photocathodeMaxRho 0.0
+
+#/pmt/prepulseProb 0.0
+#/pmt/efficiencyCorrection 1.0
+
+/pmt/bodyMaterial glass 
+/pmt/vacuumMaterial pmtVacuum
+/pmt/dynodeMaterial stainlessSteel
+
+/pmt/photocathodeSurface et9390b
+/pmt/mirrorSurface mirror
+/pmt/dynodeSurface stainlessSteel

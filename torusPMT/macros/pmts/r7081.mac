@@ -1,0 +1,22 @@
+/pmt/zEdge 96.7, 40.0, 0.0, -40.0, -90.0, -142.0
+/pmt/rhoEdge 0.0, 111.0, 130.0, 111.0, 42.25, 42.25
+/pmt/zOrigin -40.0, 0.0, 0.0, 40.0, -142.0
+
+/pmt/faceGap 0.1 mm
+/pmt/dynodeRadius 27.5 mm
+/pmt/dynodeTop -5.9 mm
+/pmt/wallThickness 3.0 mm
+
+#/pmt/photocathodeMinRho 0.0
+#/pmt/photocathodeMaxRho 0.0
+
+#/pmt/prepulseProb 0.0
+#/pmt/efficiencyCorrection 1.0
+
+/pmt/bodyMaterial glass 
+/pmt/vacuumMaterial pmtVacuum
+/pmt/dynodeMaterial stainlessSteel
+
+/pmt/photocathodeSurface r7081 # the same surface with r1408! need to implement photocathode surface. 
+/pmt/mirrorSurface mirror
+/pmt/dynodeSurface stainlessSteel

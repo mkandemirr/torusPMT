@@ -1,0 +1,21 @@
+/control/alias pmtModel r7081
+
+#PmtEnvelope
+/vis/geometry/set/colour {pmtModel}_envelopeLv 0 0.3 0.4 0.5 0.1
+/vis/geometry/set/visibility {pmtModel}_envelopeLv 0 true
+#/vis/geometry/set/forceWireframe {pmtModel}_envelopeLv 0 true
+
+#PmtBody
+/vis/geometry/set/colour {pmtModel}_bodyLv 0 0.5 0.4 0.5 0.1
+/vis/geometry/set/visibility {pmtModel}_bodyLv 0 true
+
+#Inner1
+/vis/geometry/set/colour {pmtModel}_inner1Lv 0 0.2 0.5 0.9 0.1
+/vis/geometry/set/visibility {pmtModel}_inner1Lv 0 true
+
+#Inner2
+/vis/geometry/set/colour {pmtModel}_inner2Lv 0 1.0 0.0 1.0 0.1
+/vis/geometry/set/visibility {pmtModel}_inner2Lv 0 true
+
+#Dynode
+/vis/geometry/set/colour {pmtModel}_dynodeLv 0 0.2 0.2 0.6 1.0

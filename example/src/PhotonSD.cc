@@ -125,16 +125,25 @@ void PhotonSD::EndOfEvent(G4HCofThisEvent*)
 void PhotonSD::PrintAll()
 {
   G4cout<<"-------------------PhotonSD Output----------------------"<<G4endl;
-  G4cout<<std::left<<std::setw(6+10)<<"CopyNo"<<std::setw(24)<<
-    "Photon arrival time (ns)"<<G4endl;
-
-  //G4cout<<std::setprecision(5)<<G4endl;
+  G4int characterSpacecNum = 4;
+  G4cout.width(6 + characterSpacecNum);
+  G4cout<<std::left<<"CopyNo";
   
+  characterSpacecNum = 4;
+  G4cout.width(24 + characterSpacecNum);
+  G4cout<<std::left<<"Photon arrival time (ns)"<<G4endl;
+ 
   for (std::size_t i = 0; i < mHitsCollection->entries(); ++i )
   {
-    auto hit = (*mHitsCollection)[i];   
-    G4cout<<std::left<<std::setw(6+10)<<hit->GetCopyNo()<<std::setw(19)
-          <<hit->GetArrivalTime()<<G4endl;
+    auto hit = (*mHitsCollection)[i]; 
+    
+    G4int characterSpacecNum = 4;
+    G4cout.width(6 + characterSpacecNum);
+    G4cout<<std::left<<hit->GetCopyNo();
+    
+    characterSpacecNum = 4;
+    G4cout.width(24 + characterSpacecNum);
+    G4cout<<std::left<<hit->GetArrivalTime()<<G4endl; 
   }
   
   PrintDetectedPhotonMap();
@@ -145,7 +154,7 @@ void PhotonSD::PrintAll()
 
 void PhotonSD::PrintDetectedPhotonMap() const
 {
-  // Before printing, calculate total number of detected photons in 
+   // Before printing, calculate total number of detected photons in 
   // each photosensor.  
   std::map<int,int> map;
   
@@ -162,14 +171,24 @@ void PhotonSD::PrintDetectedPhotonMap() const
   }
   
   G4cout<<"--------Detected photons map------------"<<G4endl;  
-
-  G4cout<<std::left<<std::setw(6+10)<<"CopyNo"<<std::setw(22)
-        <<"Detected photon number"<<G4endl;
   
-  for(auto el: map)
+  G4int characterSpacecNum = 4;
+  G4cout.width(6 + characterSpacecNum);
+  G4cout<<std::left<<"CopyNo";
+  
+  characterSpacecNum = 4;
+  G4cout.width(22 + characterSpacecNum);
+  G4cout<<std::left<<"Detected photon number"<<G4endl;
+  
+  for (auto el: map)
   {
-    G4cout<<std::left<<std::setw(6+10)<<el.first<<std::setw(22)
-    <<el.second<<G4endl;  
+    G4int characterSpacecNum = 4;
+    G4cout.width(6 + characterSpacecNum);
+    G4cout<<std::left<<el.first;
+
+    characterSpacecNum = 0;
+    G4cout.width(22 + characterSpacecNum);
+    G4cout<<std::left<<el.second<<G4endl;  
   }
 }
 

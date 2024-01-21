@@ -31,7 +31,7 @@ PhotonSD::~PhotonSD()
 
 void PhotonSD::Initialize(G4HCofThisEvent* hce)
 {
-	// Create hits collection
+  // Create hits collection
   mHitsCollection = new PhotonSDHitsCollection(SensitiveDetectorName, 
                                                collectionName[0]
                                                ); 
@@ -109,7 +109,7 @@ void PhotonSD::GenerateHits(const G4Step* step)
   hit->SetCopyNo(copyNo);
   hit->SetArrivalTime(postStepPoint->GetGlobalTime());
   
-	mHitsCollection->insert(hit);
+  mHitsCollection->insert(hit);
                                   
 }
 
@@ -145,31 +145,31 @@ void PhotonSD::PrintAll()
 
 void PhotonSD::PrintDetectedPhotonMap() const
 {
-	// Before printing, calculate total number of detected photons in 
-	// each photosensor.  
-	std::map<int,int> map;
-	
-	for (std::size_t i = 0; i < mHitsCollection->entries(); ++i)
+  // Before printing, calculate total number of detected photons in 
+  // each photosensor.  
+  std::map<int,int> map;
+  
+  for (std::size_t i = 0; i < mHitsCollection->entries(); ++i)
   {
-	  auto hit   = (*mHitsCollection)[i];             
-		int copyNo = hit->GetCopyNo();
-		    
-		auto it    = map.find(copyNo);
-		if( it == map.end() ) //not found
-		  map[copyNo] = 1;
-		else
-		  map.at(it->first) += 1;    						  
+    auto hit   = (*mHitsCollection)[i];             
+    int copyNo = hit->GetCopyNo();
+        
+    auto it    = map.find(copyNo);
+    if( it == map.end() ) //not found
+      map[copyNo] = 1;
+    else
+      map.at(it->first) += 1;                  
   }
   
-	G4cout<<"--------Detected photons map------------"<<G4endl;  
+  G4cout<<"--------Detected photons map------------"<<G4endl;  
 
-	G4cout<<std::left<<std::setw(6+10)<<"CopyNo"<<std::setw(22)
+  G4cout<<std::left<<std::setw(6+10)<<"CopyNo"<<std::setw(22)
         <<"Detected photon number"<<G4endl;
-	
-	for(auto el: map)
-	{
+  
+  for(auto el: map)
+  {
     G4cout<<std::left<<std::setw(6+10)<<el.first<<std::setw(22)
-    <<el.second<<G4endl;	
+    <<el.second<<G4endl;  
   }
 }
 

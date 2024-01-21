@@ -33,7 +33,7 @@ G4ThreadLocal G4Allocator<PhotonSDHit>* PhotonSDHitAllocator = 0;
 
 PhotonSDHit::PhotonSDHit()
  : G4VHit(),
-	 fCopyNo(-1),
+   fCopyNo(-1),
    fArrivalTime(0.)
    
 {}
@@ -47,7 +47,7 @@ PhotonSDHit::~PhotonSDHit() {}
 PhotonSDHit::PhotonSDHit(const PhotonSDHit& right)
   : G4VHit()
 {
-	fCopyNo               = right.fCopyNo;
+  fCopyNo               = right.fCopyNo;
   fArrivalTime          = right.fArrivalTime;
   
 }
@@ -56,7 +56,7 @@ PhotonSDHit::PhotonSDHit(const PhotonSDHit& right)
 
 const PhotonSDHit& PhotonSDHit::operator=(const PhotonSDHit& right)
 {
-	fCopyNo             = right.fCopyNo;
+  fCopyNo             = right.fCopyNo;
   fArrivalTime        = right.fArrivalTime;
   
   

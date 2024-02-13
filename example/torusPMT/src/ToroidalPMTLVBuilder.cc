@@ -47,7 +47,7 @@ mWallThickness{0.}
 
 ToroidalPMTLVBuilder::~ToroidalPMTLVBuilder()
 {
-  //delete mMessenger;
+  delete mMessenger;
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo...... 

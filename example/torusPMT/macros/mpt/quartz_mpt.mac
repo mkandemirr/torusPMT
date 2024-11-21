@@ -2,5 +2,5 @@
 /control/alias mptName quartz
 /control/alias dataDirectory torusPMT/data/material_mpt/{mptName}
 
-/matPropTable/{mptName}/addProperty RINDEX {dataDirectory}/rIndex.txt nm unitless 
-/matPropTable/{mptName}/addProperty ABSLENGTH {dataDirectory}/absLength.txt nm mm  
+/mpt/{mptName}/addProperty RINDEX {dataDirectory}/rIndex.txt nm unitless 
+/mpt/{mptName}/addProperty ABSLENGTH {dataDirectory}/absLength.txt nm mm  

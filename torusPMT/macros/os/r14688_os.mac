@@ -3,15 +3,15 @@
 /control/alias dataDirectory torusPMT/data/surface_mpt/{pmtModel}
 
 #comment below lines out if you disable surface mpt, otherwise you get command not found warning!
-/matPropTable/{pmtModel}/addProperty REALRINDEX {dataDirectory}/realRIndex.txt nm unitless
-/matPropTable/{pmtModel}/addProperty IMAGINARYRINDEX {dataDirectory}/imaginaryRIndex.txt nm unitless
-/matPropTable/{pmtModel}/addProperty EFFICIENCY {dataDirectory}/efficiency.txt nm unitless 
+/mpt/{pmtModel}/addProperty REALRINDEX {dataDirectory}/realRIndex.txt nm unitless
+/mpt/{pmtModel}/addProperty IMAGINARYRINDEX {dataDirectory}/imaginaryRIndex.txt nm unitless
+/mpt/{pmtModel}/addProperty EFFICIENCY {dataDirectory}/efficiency.txt nm unitless 
 
 # If you comment out the two lines below, all photons hitting the photocathode surface will be detected!
-#/matPropTable/{pmtModel}/addProperty EFFICIENCY {dataDirectory}/efficiency.txt nm unitless false false 1.
-#/matPropTable/{pmtModel}/addProperty REFLECTIVITY {dataDirectory}/efficiency.txt nm unitless false false 0.
+#/mpt/{pmtModel}/addProperty EFFICIENCY {dataDirectory}/efficiency.txt nm unitless false false 1.
+#/mpt/{pmtModel}/addProperty REFLECTIVITY {dataDirectory}/efficiency.txt nm unitless false false 0.
 
-/opticalSurface/{pmtModel}/model glisur
-/opticalSurface/{pmtModel}/type dielectric_metal
-/opticalSurface/{pmtModel}/finish polished
+/os/{pmtModel}/model glisur
+/os/{pmtModel}/type dielectric_metal
+/os/{pmtModel}/finish polished
 

@@ -2,6 +2,7 @@
 #define PmtFittedCylindricLVBuilder__
 
 #include "VComponentBuilder.hh"
+#include <vector>
 
 class G4LogicalVolume;
 class G4VPhysicalVolume;

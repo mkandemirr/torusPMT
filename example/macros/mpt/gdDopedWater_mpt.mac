@@ -1,6 +1,6 @@
 #gdDopedWater
 /control/alias dataDirectory data/material_mpt/gdDopedWater
 
-/matPropTable/gdDopedWater/addProperty RINDEX {dataDirectory}/rIndex.txt nm unitless 
-/matPropTable/gdDopedWater/addProperty ABSLENGTH {dataDirectory}/absLength.txt nm mm 
-/matPropTable/gdDopedWater/addProperty RAYLEIGH {dataDirectory}/rsLength.txt nm mm   
+/mpt/gdDopedWater/addProperty RINDEX {dataDirectory}/rIndex.txt nm unitless 
+/mpt/gdDopedWater/addProperty ABSLENGTH {dataDirectory}/absLength.txt nm mm 
+/mpt/gdDopedWater/addProperty RAYLEIGH {dataDirectory}/rsLength.txt nm mm   
